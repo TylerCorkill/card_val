@@ -33,7 +33,6 @@ int card_in()
 		for (int i = 0; i <= length; i++)
 		{
 			stringstream numSS(num.substr(i, 1));
-			//numSS >> numIn;
 			while (!(numSS >> numIn))
 			{
 				numSS.clear();
@@ -74,7 +73,6 @@ int card_val()
 		{
 			nums.push_back(newNum);
 		}
-		//cout << i << endl << newNum << " " << nums[i] << "\n\n";
 	}
 	int sumNum = 0;
 	for (int i = 0; i <= length; i++)
