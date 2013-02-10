@@ -128,7 +128,7 @@ int card_val()
 		}
 		else
 		{
-			cout << "Unknown Type"
+			cout << "Unknown Card Type"
 				 << endl;
 		}
 	}
