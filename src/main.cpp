@@ -14,7 +14,7 @@ vector <int> card;
 string error(string error)
 {
 	if (error == "notNum") 			return "\n----------------------------\nError: Input must be numeric\n----------------------------\n";
-	else if (error == "cardLength") return "\n----------------------\nError: Improper length\n----------------------\n";
+	else if (error == "input") return "\n---------------------\nError: Improper input\n---------------------\n";
 	else if (error == "invalid") 	return "\n--------------------------\nError: Invalid card number\n--------------------------\n";
 	else							return "\n---------------\nError: in error\n---------------\n";
 }
@@ -37,7 +37,7 @@ int card_in()
 			{
 				numSS.clear();
 				numSS.ignore(numeric_limits<streamsize>::max(), '\n');
-				cout << error("notNum");
+				cout << error("input");
 				return caller = 1;
 			}
 			card.push_back(numIn);
@@ -46,7 +46,7 @@ int card_in()
 	}
 	else
 	{
-		cout << error("cardLength");
+		cout << error("input");
 	}
 	return caller = 1;
 }
