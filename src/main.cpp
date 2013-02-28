@@ -71,7 +71,7 @@ int card_val()
 		}
 		else
 		{
-			nums.push_back(newNum);
+			nums.push_back(newNum);//Type name of new folder
 		}
 	}
 	int sumNum = 0;
